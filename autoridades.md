@@ -11,7 +11,7 @@ La **AACINI** es una Asociación Civil sin fines de lucro y de carácter educati
   <tbody>
   {% for autoridad in site.data.autoridades %}
     <tr>
-      <td>{{ autoridad.posicion }}</td>
+      <td>{{ autoridad.cargo }}</td>
       <td>{{ autoridad.nombre }}</td>
     </tr>
   {% endfor %}
