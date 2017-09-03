@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+<h1 class="lead">
+La Asociación Argentina de Carreras de Ingeniería Industrial
+te invita a formar parte de esta nueva asociación.
+</h1>
+
+{% assign pages_count = site.pages %}  
+{% if pages_count[0] != null %}
+<hr>
+
+<h3>Novedades</h3>
+
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
+{% endif %}

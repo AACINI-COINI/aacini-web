@@ -1,0 +1,54 @@
+header {
+  text-align: center;
+  padding-bottom: 30px;
+
+  a.aacini-logo {
+    display: block;
+    padding: 20px 0;
+    img {
+      height: 80px;
+    }
+  }
+
+  ul {
+    padding: 0;
+    li {
+      display: inline;
+      text-transform: uppercase;
+      font-size: 1.6rem;
+      color: $gray;
+      position: relative;
+      font-weight: 300;
+      @media only screen and (min-width: 320px) and (max-width: 570px) {
+        display: block;
+      }
+      a {
+        padding: 0 25px;
+        font-size: 1rem;
+        font-weight: 400;
+        -webkit-transition: all .5s;
+        transition: all .5s;
+        @media only screen and (min-width: 320px) and (max-width: 570px) {
+          padding: 0;
+        }
+        &:hover,
+        &.active {
+          color: $blue;
+        }
+      }
+      &::before {
+        content: "/";
+        position: absolute;
+        top: 5px;
+        left: -5px;
+        @media only screen and (min-width: 320px) and (max-width: 570px) {
+          content: "";
+          position: relative;
+        }          
+      }
+      &:first-child::before {
+        content: "";
+      }
+    }
+  }
+}

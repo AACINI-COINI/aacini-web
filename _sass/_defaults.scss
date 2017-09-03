@@ -1,0 +1,90 @@
+a {
+  text-decoration: none;
+  color: $black;
+}
+
+.content {
+  background-color: lighten($gray, 15);
+  padding: 30px;
+  min-height: 400px;
+  & > div {
+    max-width: 960px;
+    margin: 0 auto;
+
+    h1 {
+      text-transform: uppercase;
+      &.lead {
+        text-transform: none;
+        font-size: 2.5rem;
+        text-align: center;
+        padding-bottom: 100px;
+        @media only screen and (min-width: 320px) and (max-width: 570px) {
+          font-size: 1.5rem;
+        }
+      }
+      &.coini {
+        position: relative;
+        text-indent: -9999px;
+        line-height: 50px;
+        display: inline-block;
+        &::before {
+          content: "";
+          position: absolute;
+          background: url('../img/coini.svg');
+          background-size: cover;
+          width: 127px;
+          height: 50px;
+          top: 0;
+          left: 0;
+        }
+      }
+    }
+    h2 {
+      padding-top: 20px;
+    }
+    hr {
+      height: 1px;
+      background: none;
+      border: 0;
+      border-top: 1px dashed $blue;
+    }
+    ul {
+      list-style-type: square;
+    }
+    ul, ol {
+      list-style-position: outside;
+      padding: 0;
+    }
+    table {
+      width: 100%;
+      margin: 20px 0;
+      tr {
+        td {
+          line-height: 30px;
+          font-size: 1.1rem;
+          @media only screen and (min-width: 320px) and (max-width: 570px) {
+            font-size: 0.8rem;
+            line-height: 0.8rem;
+            padding: 5px 0;
+          }
+          &:first-child {
+            width: 40%;
+            text-align: right;
+            padding-right: 10px;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+}
+
+.coini {
+  a {
+    color: $orange;
+    font-weight: 700;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

@@ -1,0 +1,7 @@
+---
+layout: pages
+title:  "Ejemplo"
+date:   2017-09-02 19:23:47 -0300
+---
+
+Noticia de ejemplo.
